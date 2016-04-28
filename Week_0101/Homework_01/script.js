@@ -1,7 +1,4 @@
 var a = 2;
 
-if (a % 2 === 0) {
-    console.log('The number is even.');
-} else {
-    console.log('The number is odd.');
-}
+var theNumber = (a & 1) ? 'odd' : 'even';
+console.log('The number is ' + theNumber + '.');

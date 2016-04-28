@@ -4,6 +4,7 @@ var a = 17,
 for (var i = 2; i < a; i++) {
     if (a % i === 0) {
         prime = false;
+        break;
     }
 }
 
