@@ -11,4 +11,5 @@ switch (number) {
     case 8: console.log('Eight'); break;
     case 9: console.log('Nine'); break;
     case 10: console.log('Ten'); break;
+    default: console.log('Please use unmber between 1 and 10'); break;
 }
