@@ -1,7 +1,8 @@
 var number = 213,
     ones = number % 10,
     tens = number % 100 - ones,
-    hundreds = Number(String(number)[0]);
+    hundreds = Math.floor(number / 100);
+    // hundreds = Number(String(number)[0]);
 
 console.log('We\'re assuming the number must be a 3 digit integer.');
 // console.log(number, hundreds, tens, ones);
