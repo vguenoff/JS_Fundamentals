@@ -20,3 +20,4 @@ while(start <= end) {
 }
 
 console.log(`The prime numbers between ${start} and ${end} are ${list.join(', ')}.`);
+console.log(`The smallest prime number is ${list[0]} and the bigest is ${list[list.length - 1]}.`);
