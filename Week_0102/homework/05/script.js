@@ -1,4 +1,4 @@
-var number = 213,
+var number = 333,
     ones = number % 10,
     tens = number % 100 - ones,
     hundreds = Math.floor(number / 100);
@@ -8,15 +8,15 @@ console.log('We\'re assuming the number must be a 3 digit integer.');
 // console.log(number, hundreds, tens, ones);
 
 var textTranslator = {
-     1: 'one',
-     2: 'two',
-     3: 'three',
-     4: 'four',
-     5: 'five',
-     6: 'six',
-     7: 'seven',
-     8: 'eight',
-     9: 'nine',
+    1: 'one',
+    2: 'two',
+    3: 'three',
+    4: 'four',
+    5: 'five',
+    6: 'six',
+    7: 'seven',
+    8: 'eight',
+    9: 'nine',
     10: 'ten',
     11: 'eleven',
     12: 'twelve',

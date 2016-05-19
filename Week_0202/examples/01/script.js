@@ -16,10 +16,14 @@
 // console.log(sum);
 
 var num = '1234',
-    sum = 0;
+    sum = 0,
+    numList = [];
 
 for(let i = 0; i < num.length; i++) {
-    sum += parseInt(num[i]);
+    let a = parseInt(num[i]);
+    sum += a;
+    numList.push(a);
 }
 
 console.log(sum);
+console.log(numList);
