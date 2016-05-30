@@ -27,38 +27,38 @@
         calcNumbers(5, 4, '//')
     );
 
-    // another way woth OOJS
-    Number.prototype.add = function(b) {
-        let a = this;
-        return a + b;
-    };
-    Number.prototype.subtract = function(b) {
-        let a = this;
-        return a - b;
-    };
-    Number.prototype.multiplicate = function(b) {
-        let a = this;
-        return a * b;
-    };
-    Number.prototype.devide = function(b) {
-        let a = this;
-        return a / b;
-    };
-    Number.prototype.modulus = function(b) {
-        let a = this;
-        return a % b;
+    // another way with OOJS
+    Number.prototype = {
+        addition: function(b) {
+            let a = this;
+            return a + b;
+        },
+        subtract: function(b) {
+            let a = this;
+            return a - b;
+        },
+        multiplicate: function(b) {
+            let a = this;
+            return a * b;
+        },
+        devide: function(b) {
+            let a = this;
+            return a / b;
+        },
+        modulus: function(b) {
+            let a = this;
+            return a % b;
+        }
     };
 
     let num = 5;
 
     console.log(
-        num.add(4),
+        num.addition(4),
         num.subtract(4),
         num.multiplicate(4),
         num.devide(4),
         num.modulus(4)
     );
-
-    // Mitak, probvah da navurja vsichki operatori v edin prototype, no ne stana - davashe mi errori. Dali ima hityr nachin towa da stane?
-
+    
 }());
