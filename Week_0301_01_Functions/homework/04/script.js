@@ -28,27 +28,25 @@
     );
 
     // another way with OOJS
-    Number.prototype = {
-        addition: function(b) {
-            let a = this;
-            return a + b;
-        },
-        subtract: function(b) {
-            let a = this;
-            return a - b;
-        },
-        multiplicate: function(b) {
-            let a = this;
-            return a * b;
-        },
-        devide: function(b) {
-            let a = this;
-            return a / b;
-        },
-        modulus: function(b) {
-            let a = this;
-            return a % b;
-        }
+    Number.prototype.addition = function(b) {
+        let a = this;
+        return a + b;
+    };
+    Number.prototype.subtract = function(b) {
+        let a = this;
+        return a - b;
+    };
+    Number.prototype.multiplicate = function(b) {
+        let a = this;
+        return a * b;
+    };
+    Number.prototype.devide = function(b) {
+        let a = this;
+        return a / b;
+    };
+    Number.prototype.modulus = function(b) {
+        let a = this;
+        return a % b;
     };
 
     let num = 5;
