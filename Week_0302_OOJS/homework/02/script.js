@@ -29,7 +29,7 @@
             return `We're "${this.companyName}", a company with ${this.numOfEmployees} employees.`;
         }
         listCompanyEmployees() {
-            return `Our newest employees are ${this.employeesList}`; // this returns Our newest employees are [object Object]. How could I print correctly the actual content of the array?
+            return `Our newest employees are: ${this.employeesList}.`;
         }
         hireEmploee(employee) {
             if(employee !== undefined) {
@@ -73,6 +73,9 @@
         }
         sayHallo() {
             return `Hi, I am ${this.employeeName} and I work as ${this.position}.`;
+        }
+        toString() {
+            return `\n${this.employeeName} - ${this.position}`;
         }
     }
 
