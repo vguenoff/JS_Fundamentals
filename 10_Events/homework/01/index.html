@@ -5,8 +5,21 @@
     <title>Homework_01</title>
 </head>
 <body>
-    <p></p>
-    <div id="container"></div>
+    <!-- Task -->
+    <p style="font-size: 1em;">Напишете JS код, който по съществуващ HTML</p>
+    <ul>
+        <li>Да намира бутон с id=“clickable” и да се закача за събитието ‘click’</li>
+        <li>При клик на този бутон да се сменя цвета на фона на 1вия <strong>&lt;div&#47;&gt;</strong> елемент</li>
+        <li>Да се добавят още 2 бутона + и  -, като при клик на + да се увеличава шрифта на текста, а при клик на – да се намалява шрифта на текста</li>
+    </ul>
+    <hr>
+    <!-- Solution -->
+    <div style="width: 100px; height: 100px; background: yellow; border: 1px solid grey; margin-bottom: 10px; padding: 12px;"></div>
+    <button id="clickable" style="padding: 6px; border-radius: 0;">Random Color Picker!</button>
+    <br>
+    <button id="plusBtn" style="font-size: 1.5em; margin-top: 10px"><strong>+</strong></button>
+    <button id="minusBtn" style="font-size: 1.5em;"><strong>-</strong></button>
+
     <script src="script.js"></script>
 </body>
 </html>

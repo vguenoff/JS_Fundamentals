@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework_02</title>
+</head>
+<body>
+    <!-- Task -->
+    <p>
+        Да се напише JS код, който да прави валидация на дадена HTML форма и да извежда на страницата коректни съобщения. Формата има полета за име и години.
+    </p>
+    <ul>
+        <li>Името може да е само малки или главни латински букви, други символи не са допустими.</li>
+        <li>Годините са цяло число в интервала 18-54.</li>
+    </ul>
+    <hr>
+    <!-- Solution -->
+    <form>
+        First name:<br>
+        <input type="text" name="firstName" id="firstName"><br>
+        Last name:<br>
+        <input type="text" name="lastName" id="lastName"><br>
+        Years (18-54):<br>
+        <input type="number" name="years" id="years"><br>
+    </form>
+    <button id="submit">Submit</button>
+    <script src="script.js"></script>
+</body>
+</html>
