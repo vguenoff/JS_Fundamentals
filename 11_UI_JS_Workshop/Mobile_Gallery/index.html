@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Gallery (ES2015)</title>
+    <style type="text/css">
+        body {
+            background: lightgrey;
+        }
+        .current {
+            box-sizing: border-box;
+            border: 5px solid grey;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script src="scripts.js"></script>
+    <script type="text/javascript">
+        let animals = [{
+            title: 'Cat',
+            url: 'images/Cat.jpg'
+        }, {
+            title: 'Deer',
+            url: 'images/Deer.jpg'
+        }, {
+            title: 'Dog',
+            url: 'images/Dog.jpg'
+        }, {
+            title: 'Dogs',
+            url: 'images/Dogs.jpg'
+        }, {
+            title: 'Hedgehog',
+            url: 'images/Hedgehog.jpg'
+        }, {
+            title: 'Horse',
+            url: 'images/Horse.jpg'
+        }, {
+            title: 'Kitten',
+            url: 'images/Kitten.jpg'
+        }, {
+            title: 'Owl',
+            url: 'images/Owl.jpg'
+        }, {
+            title: 'Panda',
+            url: 'images/Panda.jpg'
+        }, {
+            title: 'Snow Leopard',
+            url: 'images/Snow_Leopard.jpg'
+        }, {
+            title: 'Tiger',
+            url: 'images/Tiger.jpg'
+        }, {
+            title: 'Wolf',
+            url: 'images/Wolf.jpg'
+        }];
+
+        window.onload = function () {
+            createImagesPreviewer('#container', animals);
+        };
+    </script>
+</body>
+</html>
